@@ -5,5 +5,5 @@ git "/tmp/dcert" do
 end
 
 execute 'launch webby' do
-  command 'go run /tmp/webby.go'
+  command 'go run /tmp/dcert/webby/webby.go'
 end
