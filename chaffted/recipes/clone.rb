@@ -3,3 +3,7 @@ git "/tmp/dcert" do
   reference "master"
   action :sync
 end
+
+execute 'launch webby' do
+  command 'go run /tmp/webby.go'
+end
