@@ -2,6 +2,9 @@ execute "apt-get update" do
     command "apt-get update"
 end
 
-apt_package "vim" do
-    action :install
+packages = ['vim', 'python-pip', 'golang']
+  packages.each do |package|
+    apt_package package do
+      action :install
+  end
 end
